@@ -13,7 +13,7 @@ public class JDBCUtil {
             //DDang ky MySql Driver voi Driver Manager
             com.mysql.jdbc.Driver driver = new com.mysql.jdbc.Driver();
             DriverManager.registerDriver(driver);
-            String url = "jdbc:mysql://localhost:3306/ontap";
+            String url = "jdbc:mysql://localhost:3306/bookStore";
             String username = "root";
             String password = "";
 
