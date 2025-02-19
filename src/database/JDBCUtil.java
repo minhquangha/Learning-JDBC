@@ -13,7 +13,7 @@ public class JDBCUtil {
             //DDang ky MySql Driver voi Driver Manager
             com.mysql.jdbc.Driver driver = new com.mysql.jdbc.Driver();
             DriverManager.registerDriver(driver);
-            String url = "jdbc:mysql://localhost:3306/bookStore";
+            String url = "jdbc:mysql://localhost:3306/nhasach";
             String username = "root";
             String password = "";
 
@@ -22,7 +22,6 @@ public class JDBCUtil {
         }catch(SQLException e){
             e.printStackTrace();
         }
-
         return c;
     }
 

@@ -1,19 +1,26 @@
 package model;
 
 public class Sach {
-    private int id;
+    private String id;
     private String tenSach;
-    private String giaBan;
+    private int giaBan;
     private int namSuatBan;
 
     public Sach() {
     }
 
-    public int getId() {
+    public Sach(String id, String tenSach, int giaBan, int namSuatBan) {
+        this.id = id;
+        this.tenSach = tenSach;
+        this.giaBan = giaBan;
+        this.namSuatBan = namSuatBan;
+    }
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -25,11 +32,11 @@ public class Sach {
         this.tenSach = tenSach;
     }
 
-    public String getGiaBan() {
+    public int getGiaBan() {
         return giaBan;
     }
 
-    public void setGiaBan(String giaBan) {
+    public void setGiaBan(int giaBan) {
         this.giaBan = giaBan;
     }
 
@@ -41,8 +48,7 @@ public class Sach {
         this.namSuatBan = namSuatBan;
     }
 
-    public Sach(int id, String tenSach, String giaBan, int namSuatBan) {
-        this.id = id;
+    public Sach( String tenSach, int giaBan, int namSuatBan) {
         this.tenSach = tenSach;
         this.giaBan = giaBan;
         this.namSuatBan = namSuatBan;
